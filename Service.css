@@ -1,0 +1,216 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url(IMAGES/sidibe.jpg);
+    background-size: cover;
+    }
+header{
+    background-color: violet;
+    display: flex;
+    justify-content: space-between;
+    }
+header .title{
+       font-size:  40px;
+       font-style: italic;
+       font-family: 'Times New Roman', Times, serif;
+    }   
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px ;
+}
+nav ul li{
+    margin: 5px;
+}
+nav ul li a{
+text-decoration: none;
+font-size: 25px;
+text-transform: uppercase;
+font-family: 'Times New Roman', Times, serif;
+}
+nav ul li a:hover{
+   border-bottom: 5px solid white;
+   padding-bottom: 3px;
+   color: blue;
+}
+h1{
+font-size: 40px;
+font-family: 'Times New Roman', Times, serif;
+font-style: italic;
+color: white;
+text-align: center;
+}
+h3{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+.grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 10px;
+    margin-left: 50px;
+}
+.grids .groupe{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border: 5px solid violet;
+    border-radius: 10px;
+
+}
+.grids .groupe h1{
+    font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+font-style: italic;
+color: white;
+text-align: center;
+}
+.grids .groupe p{
+    font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+color: white;
+text-align: center;
+}
+.grids .groupe .cercle{
+    width: 150px;
+    height: 150px;
+    border:5px solid violet;
+    border-radius: 50%;
+   margin: 0 auto;
+   margin-top: 10px;
+}
+.grids .groupe .cercle i{
+    font-size: 70px;
+    color: white;
+    margin-top:  30px;
+    margin-left: 40px;
+   }
+/*Partie Tablette */
+@media screen and (max-width:900px) {
+    nav ul li a{
+        text-decoration: none;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        }header .title{
+            font-size:  25px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 5px;
+            width: 100%;
+         }   
+         .grids .groupe .cercle{
+            width: 150px;
+            height: 150px;
+            border:5px solid violet;
+            border-radius: 50%;
+           margin: 0 auto;
+           margin-top: 10px;
+         }
+         .grids{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            row-gap: 40px;
+            column-gap: 10px;
+            margin-left: 30px;
+        }
+        .grids .groupe{
+            width: 380px;
+            height: 380px;
+            background-color: black;
+            border: 5px solid violet;
+            border-radius: 10px;
+        
+        }
+}
+/*Partie Android */
+@media screen and (max-width:500px) {
+    nav ul li a{
+        text-decoration: none;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    header .title{
+            font-size:  20px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 20px;
+            width: 100%;
+         }   
+         .grids .groupe .cercle{
+            width: 150px;
+            height: 150px;
+            border:5px solid violet;
+            border-radius: 50%;
+           margin: 0 auto;
+           margin-top: 10px;
+         }
+         .grids{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            row-gap: 40px;
+            column-gap: 10px;
+            margin-left: 40px;
+        }
+        .grids .groupe{
+            width: 380px;
+            height: 380px;
+            background-color: black;
+            border: 5px solid violet;
+            border-radius: 10px;
+       }
+      
+}
+/*Partie Android */
+@media screen and (max-width:400px) {
+    nav ul li a{
+        text-decoration: none;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    header .title{
+            font-size:  15px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 20px;
+            width: 100%;
+
+         }   
+         .grids .groupe .cercle{
+            width: 150px;
+            height: 150px;
+            border:5px solid violet;
+            border-radius: 50%;
+           margin: 0 auto;
+           margin-top: 10px;
+         }
+         .grids{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            row-gap: 40px;
+            column-gap: 10px;
+            margin-left: 10px;
+            margin-right: 5px;
+
+        }
+        .grids .groupe{
+            width: 350px;
+            height: 380px;
+            background-color: black;
+            border: 5px solid violet;
+            border-radius: 10px;
+        
+       }
+      
+}

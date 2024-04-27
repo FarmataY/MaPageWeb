@@ -1,0 +1,279 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url(IMAGES/sidibe.jpg);
+    background-size: cover;
+    }
+header{
+    background-color: violet;
+    display: flex;
+    justify-content: space-between;
+    }
+header .title{
+       font-size:  40px;
+       font-style: italic;
+       font-family: 'Times New Roman', Times, serif;
+    }   
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px ;
+}
+nav ul li{
+    margin: 5px;
+}
+nav ul li a{
+text-decoration: none;
+font-size: 25px;
+text-transform: uppercase;
+font-family: 'Times New Roman', Times, serif;
+}
+nav ul li a:hover{
+   border-bottom: 5px solid white;
+   padding-bottom: 3px;
+   color: blue;
+}
+.contenaire{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.contenaire .gauche{
+ background-color: gray;
+ border-top-left-radius: 40px;
+ border-bottom-left-radius: 40px;
+}
+.contenaire .gauche h1{
+font-size: 50px;
+font-style: italic;
+text-align: center;
+color: white;
+}
+.contenaire .gauche h3{
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    }
+    .contenaire .gauche .info{
+        line-height: 70px;
+        color: white;
+        font-size: 20px;
+        margin-left: 10%;
+
+    }
+    .contenaire .gauche i{
+        font-size: 20px;
+        color:black;
+        margin: 20px;
+    }
+    .contenaire .droite{
+        background-color:whitesmoke ;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+   .contenaire .droite h1{
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+   }
+.contenaire .droite .for{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 50%;
+    box-shadow: inset 8px 8px 8px 8px rgb(215, 206, 206), inset -8px -8px 8px white;
+    padding: 14px 12px;
+    border-radius: 30px;
+}
+.contenaire .droite .for input{
+border: none;
+font-size: 20px;
+background: none;
+outline: none;
+}
+.contenaire .droite .for textarea{
+resize: none;
+border: none;
+background: none;
+outline: none;
+font-size: 20px;
+}
+.contenaire .droite button{
+width: 50%;
+margin-top: 40px;
+margin-bottom: 10px;
+margin-left: 20%;
+font-size: 20px;
+border-radius: 30px;
+background-color: violet;
+border: none;
+padding: 10px;
+}
+/*Partie Tablette */
+@media screen and (max-width:900px) {
+    nav ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        }header .title{
+            font-size:  25px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 5px;
+            width: 100%;
+         }  
+         .contenaire .gauche .info{
+            line-height: 70px;
+            color: white;
+            font-size: 18px;
+            margin-left: 5%;
+        }
+        .contenaire .droite .for{
+            margin-top: 20px;
+            margin-left: 30px;
+            width: 50%;
+            box-shadow: inset 8px 8px 8px 8px rgb(215, 206, 206), inset -8px -8px 8px white;
+            padding: 14px 12px;
+            border-radius: 30px;
+        }
+        .contenaire .droite .for textarea{
+            resize: none;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 15px;
+            }
+}
+/* Partie Android */
+@media screen and (max-width:500px) {
+    nav ul li a{
+        text-decoration: none;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        }header .title{
+            font-size:  20px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 20px;
+            width: 100%;
+         }  
+         .contenaire .gauche .info{
+            line-height: 70px;
+            color: white;
+            font-size: 18px;
+            margin-left: 10%;
+            text-align: start;
+        }
+        .contenaire .droite .for{
+            margin-top: 20px;
+            margin-left: 30px;
+            width: 50%;
+            box-shadow: inset 8px 8px 8px 8px rgb(215, 206, 206), inset -8px -8px 8px white;
+            padding: 14px 12px;
+            border-radius: 30px;
+        }
+        .contenaire .droite .for textarea{
+            resize: none;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 15px;
+            } 
+            .contenaire{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                width: 80%;
+                height: 100%;
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }  
+            .contenaire .gauche i{
+                font-size: 20px;
+                color:black;
+                margin: 10px;
+                
+            }
+            .contenaire .gauche{
+                background-color: gray;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+               }
+               .contenaire .droite{
+                background-color:whitesmoke ;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+}
+/* Partie Android */
+@media screen and (max-width:400px) {
+    nav ul li a{
+        text-decoration: none;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        }header .title{
+            font-size:  15px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 20px;
+            width: 100%;
+         }  
+         .contenaire .gauche .info{
+            line-height: 70px;
+            color: white;
+            font-size: 12px;
+            margin-left: 10%;
+            text-align: start;
+        }
+        .contenaire .droite .for{
+            margin-top: 20px;
+            margin-left: 30px;
+            width: 50%;
+            box-shadow: inset 8px 8px 8px 8px rgb(215, 206, 206), inset -8px -8px 8px white;
+            padding: 14px 12px;
+            border-radius: 30px;
+        }
+        .contenaire .droite .for textarea{
+            resize: none;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 15px;
+            } 
+            .contenaire{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                width: 80%;
+                height: 1000%;
+                margin:0 auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 32px;
+            }  
+            .contenaire .gauche i{
+                font-size: 20px;
+                color:black;
+                margin: 10px;
+                
+            }
+            .contenaire .gauche{
+                background-color: gray;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+               }
+               .contenaire .droite{
+                background-color:whitesmoke ;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
